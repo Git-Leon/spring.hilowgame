@@ -1,21 +1,9 @@
 package com.zipcodewilmington.bakery.models;
 
-
-import javax.persistence.*;
-
-@MappedSuperclass
 public class CardPlayer {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    Long id;
-    String name;
-
-    @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "hand_id")
-    Hand hand;
-
-    @OneToOne
+    //Hand hand;
     Account account;
+    String name;
 
     public CardPlayer() {
     }
@@ -23,22 +11,6 @@ public class CardPlayer {
     public CardPlayer(Account account, String name) {
         this.account = account;
         this.name = name;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Hand getHand() {
-        return hand;
-    }
-
-    public void setHand(Hand hand) {
-        this.hand = hand;
     }
 
     public Account getAccount() {
