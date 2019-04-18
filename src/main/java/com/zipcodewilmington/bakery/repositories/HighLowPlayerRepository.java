@@ -5,5 +5,5 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface HiLowPlayerRepository extends CrudRepository<HighLowPlayer, Long> {
+public interface HighLowPlayerRepository extends CrudRepository<HighLowPlayer, Long> {
 }

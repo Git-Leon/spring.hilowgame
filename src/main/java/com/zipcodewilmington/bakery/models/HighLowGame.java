@@ -2,15 +2,15 @@ package com.zipcodewilmington.bakery.models;
 
 import java.util.List;
 
-public class HiLowGame {
+public class HighLowGame {
     Long id;
     Deck deck;
-    List<HiLowGame> playerList;
+    List<HighLowGame> playerList;
 
-    public HiLowGame() {
+    public HighLowGame() {
     }
 
-    public HiLowGame(Long id, Deck deck, List<HiLowGame> playerList) {
+    public HighLowGame(Long id, Deck deck, List<HighLowGame> playerList) {
         this.id = id;
         this.deck = deck;
         this.playerList = playerList;
@@ -32,11 +32,11 @@ public class HiLowGame {
         this.deck = deck;
     }
 
-    public List<HiLowGame> getPlayerList() {
+    public List<HighLowGame> getPlayerList() {
         return playerList;
     }
 
-    public void setPlayerList(List<HiLowGame> playerList) {
+    public void setPlayerList(List<HighLowGame> playerList) {
         this.playerList = playerList;
     }
 

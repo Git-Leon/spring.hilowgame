@@ -1,19 +1,19 @@
 package com.zipcodewilmington.bakery.services;
 
-import com.zipcodewilmington.bakery.models.HiLowGame;
+import com.zipcodewilmington.bakery.models.HighLowGame;
 import com.zipcodewilmington.bakery.models.HighLowPlayer;
-import com.zipcodewilmington.bakery.repositories.HiLowGameRepositary;
-import com.zipcodewilmington.bakery.repositories.HiLowPlayerRepository;
+import com.zipcodewilmington.bakery.repositories.HighLowGameRepositary;
+import com.zipcodewilmington.bakery.repositories.HighLowPlayerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class HiLowPlayerService {
-    private HiLowGameRepositary gameRepo;
-    private HiLowPlayerRepository playerRepo;
+public class HighLowPlayerService {
+    private HighLowGameRepositary gameRepo;
+    private HighLowPlayerRepository playerRepo;
 
     @Autowired
-    public HiLowPlayerService(HiLowPlayerRepository playerRepo, HiLowGameRepositary gameRepo) {
+    public HighLowPlayerService(HighLowPlayerRepository playerRepo, HighLowGameRepositary gameRepo) {
         this.playerRepo = playerRepo;
         this.gameRepo = gameRepo;
     }
@@ -23,7 +23,7 @@ public class HiLowPlayerService {
     }
 
     public HighLowPlayer show(Long gameId, Long accountId) {
-        HiLowGame highLowGame = gameRepo.findById(gameId).get();
+        HighLowGame highLowGame = gameRepo.findById(gameId).get();
         return highLowGame.findById(accountId);
     }
 
