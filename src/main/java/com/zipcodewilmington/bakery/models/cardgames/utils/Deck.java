@@ -1,9 +1,8 @@
-package com.zipcodewilmington.bakery.models;
+package com.zipcodewilmington.bakery.models.cardgames.utils;
 
 import java.util.Stack;
 
 public class Deck {
-
     Stack<Card> cardStack;
 
     public Deck() {

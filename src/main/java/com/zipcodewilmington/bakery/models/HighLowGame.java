@@ -1,5 +1,7 @@
 package com.zipcodewilmington.bakery.models;
 
+import com.zipcodewilmington.bakery.models.cardgames.utils.Deck;
+
 import java.util.List;
 
 public class HighLowGame {

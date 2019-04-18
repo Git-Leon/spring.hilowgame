@@ -1,4 +1,5 @@
-package com.zipcodewilmington.bakery.models;
+package com.zipcodewilmington.bakery.models.cardgames.utils;
+
 
 import javax.persistence.*;
 import java.util.List;
